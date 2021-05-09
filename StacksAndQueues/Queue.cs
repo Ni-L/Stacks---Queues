@@ -63,5 +63,42 @@ namespace StacksAndQueues
                 }
             }
         }
+        //Displaying first element in queue
+        public int QueuePeek()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Empty Queue");
+            }
+
+            Console.WriteLine("Peek method for queue");
+            Console.WriteLine(head.data);
+            return head.data;
+        }
+    
+        /// removing 1st element from the queue
+        public void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Empty Queue");
+            }
+            //passing the address of 2nd element to the head, hence head will directly point to 2nd element and 1st element is abandoned.
+            head = head.next;
+            DisplayQueue();
+
+
+        }
+        //Adding Method For deleting Queue
+        public void IsEmptyQueue()
+        {
+            Node temp = head;
+            while (temp != null)
+            {
+                QueuePeek();
+                Dequeue();
+                temp = temp.next;
+            }
+        }
     }
 }
