@@ -16,16 +16,24 @@ namespace StacksAndQueues
             //Creating object for statcks
             Stacks stacks = new Stacks();
             //Pushing the Values
-            stacks.Push(70);
-            stacks.Push(30);
-            stacks.Push(56);
-            stacks.Push(16);
+            //stacks.Push(70);
+            //stacks.Push(30);
+            //stacks.Push(56);
+            //stacks.Push(16);
             //For display Element
-            stacks.Display();
+            //stacks.Display();
             //for peeking out the top value
-            stacks.Peek();
+            //stacks.Peek();
             //For poping out the top values
-            stacks.Pop();
+            //stacks.Pop();
+            Console.WriteLine("+++++++++WELCOME+TO+QUEUE+++++++++");
+            //Creating object for Queue()
+            Queue queue = new Queue();
+            //putting values in queue
+            queue.Enqueue(44);
+            queue.Enqueue(33);
+            queue.Enqueue(23);
+            queue.DisplayQueue();
             Console.ReadLine();
         }
     }
